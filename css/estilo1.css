@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Indie+Flower&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 250,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+header {
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+}
+body {
+    background: #f9ebf2; /* Rosa suave */
+}
+nav {
+    background: linear-gradient(to right, #6f3eca, #aed9e0);
+    color: #fff; /* Cor do texto no menu de navegação */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center;
+}
+li  span{
+    cursor: pointer;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1); 
+  }
+  select option {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+      
+
+/*Div Calculadora */
+.content {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    margin-top: 5%;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease; 
+    
+}
+.content.visible {
+    opacity: 1; 
+}
+.revelaText {
+    display: none;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    position: absolute;
+    overflow-y: auto;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;;
+    
+}
+.helpCalc{
+    margin-left:15%;
+}
+.help_icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.helpCalc:hover .revelaText{
+    display: inline-block;
+}
+
+.calculadora{
+    width: 450px;
+    height: auto;
+    background-color: #d1c4e9;
+    position: relative;
+    left: 10%;
+    border: 2px solid #512da8;
+    margin-right: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+.tempo{
+    background-color: #8e44ad !important;
+    color: #ffffff !important;
+    text-align: center;
+    border: 1px solid #512da8;
+    margin: 5px;
+    padding: 5px;
+}
+.resultado{
+    background-color: #ffffff  !important;
+    color: #333333 !important;
+    border: 1px solid #512da8;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    padding: 5px;
+    margin: 8px;
+
+}
+/* botoes da calculadora */
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px; /* Espaço entre os botões */
+    width: auto; /* Largura total da grade */
+    margin:  auto; /* Centralizar a grade */
+    background-color: #a569bd;
+    color: #ffffff ;
+}
+.botoes button{
+    border: #7e349d !important;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    border-color: #7e349d;
+    padding: 8px;
+}
+.num{
+    background-color: #ffffff ;
+}
+.opert, .clear, .igual{
+    background: linear-gradient(to left, #c39bd3, #ff99cc);
+}
+
+/*Sequência*/
+.contentFibo{
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+.pegaFibo{
+    width: 450px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 5px;
+    position: relative;
+    left: 62%;
+    background-color:  #9b59b6;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+.pegaFibo h1{
+    color: #fff;
+}
+label{
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+input{
+    padding: 5px;
+    font-size: 16px;
+}
+.pegaFibo button{
+    background: linear-gradient(to left, #c39bd3, #ff99cc);
+    margin-top: 20px;
+    color: #fff;
+}
+#resultFibo{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.revelaFibo {
+    display: none;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    position: absolute;
+    overflow-y: auto;
+    right: 42%;
+    left: 35%;
+    margin-left: -18%;
+    margin-top: -5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.helpFibo{
+    box-shadow: 10px solid black;
+    margin-left: 52%;
+    margin-top: -5%;
+}
+.help_fibo {
+    font-size: 24px;
+    cursor: pointer;
+}
+.helpFibo:hover .revelaFibo{
+    display: inline-block;
+}
+.contentFibo.visible {
+    opacity: 1; 
+}
+/*Baskhara*/
+.contentBask{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+.baskCalc{
+    width: 350px;
+    height: auto;
+    background: linear-gradient(45deg, #ff66b2, #8e44ad);
+    position: relative;
+    left: 10%;
+    margin-right: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.baskCalc input {
+    width: 80px;
+    padding: 3px; 
+    margin: 5px;
+    border: 1px solid #512da8; 
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+.baskCalc button{
+    background: linear-gradient(45deg, #cc66ff, #9966cc);
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+
+   
+}
+.baskCalc button:hover{
+    background: linear-gradient(45deg, #9966cc, #663399);
+}
+
+.textbask{ 
+    color: transparent;
+    background-image: linear-gradient(45deg, #9370DB, #800080);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    font-size: 16px; 
+   
+}
+
+.revelaBask {
+    display: none;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    position: absolute;
+    overflow-y: auto;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;;
+    
+}
+.helpBask{
+    margin-left: 24%;
+   
+}
+.help_bask {
+    font-size: 24px;
+    cursor: pointer;
+}
+.helpBask:hover .revelaBask{
+    display: inline-block;
+}
+
+.contentBask.visible {
+    opacity: 1; 
+}
+
+/*Conversão de Medidas */
+.contentConvers{
+    margin-top: 100px;
+    opacity: 0;
+    transition: opacity 6s ease; 
+}
+.medidas{
+    width: 450px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 5px;
+    position: relative;
+    left: 62%;
+    background: linear-gradient(45deg, #ff66b2, #d966cc, #ff99cc);
+    color: #ffccf2;  ;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.medidas button{
+    background: linear-gradient(45deg, #cc66ff, #9966cc);
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.medidas button:hover{
+    background: linear-gradient(45deg, #9966cc, #663399);
+}
+.medidas input{
+    width: 80px;
+    padding: 3px; 
+    margin: 5px;
+    border: 1px solid #512da8; 
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.revelaMed {
+    display: none;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    position: absolute;
+    overflow-y: auto;
+    right: 42%;
+    left: 35%;
+    margin-left: -18%;
+    margin-top: -5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.helpMed{
+    box-shadow: 10px solid black;
+    margin-left: 52%;
+    margin-top: -5%;
+}
+.help_med {
+    font-size: 24px;
+    cursor: pointer;
+}
+.helpMed:hover .revelaMed{
+    display: inline-block;
+}
+.contentConvers.visible {
+    opacity: 1; 
+}
+
+footer {
+    margin-top: 10%;
+    background: linear-gradient(to left, #8e44ad, #3498db);
+    color: #fff; /* Cor do texto no footer */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+}
+
+.op{
+    opacity: 1 !important;
+}

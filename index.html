@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática</title>
+    <link rel="stylesheet" href="css/estilo1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        Matemática
+    </header>
+    <nav>
+        <ul>
+            <li><span class="material-symbols-outlined menuItem">menu_book</span></li>
+            
+        </ul>
+        
+    </nav>
+    <div class="content">
+        <div class="calculadora">
+            <div class="tempo">
+                00:00:00
+            </div>
+            <div class="resultado">
+                
+            </div>
+            <div class="botoes">
+                <button class="clear"> <span class="material-symbols-outlined">
+                    restart_alt
+                    </span>Clear</button>
+                <button class="opert">(</button>
+                <button class="opert">)</button>
+                <button class="opert">-</button>
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="opert">+</button>
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="opert">x</button>
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="opert">/</button>
+                <button class="num">0</button>
+                <button class="opert">.</button>
+                <button class="igual">=</button>
+                <button class="opert">%</button>
+            </div>
+        </div>
+        <div class="helpCalc">
+            <span class="material-symbols-outlined help_icon">live_help</span>
+            <span class="revelaText"><p>Uma calculadora é um dispositivo ou ferramenta que faz cálculos matemáticos. Pode ser física, eletrônica ou um aplicativo no computador ou celular. Calculadoras realizam operações básicas, como adição, subtração, multiplicação e divisão, além de funções mais avançadas para diversos usos.</p></span>
+        </div>
+    </div>
+    <div class="contentFibo">
+        <div class="pegaFibo">
+            <h1>Sequência de Fibonacci</h1>
+            <label for="quantity">Escolha quantos números de fibonacci</label>
+            <input type="number" name="number" id="quantity" min="1"><br>
+            <button id="calcularFibo">Calcular</button>
+            <div id="resultFibo">Sequência de fibonacci</div>
+        </div>
+        <div class="helpFibo">
+            <span class="material-symbols-outlined help_fibo">live_help</span>
+            <span class="revelaFibo"><p>A sequência de Fibonacci é uma série matemática em que cada número é a soma dos dois anteriores, começando por 0 e 1. Portanto, a sequência começa assim: 0, 1, 1, 2, 3, 5, 8, 13, 21. Ela exibe um padrão de crescimento exponencial e é encontrada em diversos fenômenos naturais.</p></span>
+        </div>
+    </div>
+    <div class="contentBask">
+        <div class="baskCalc">
+            <div class="textbask">
+                <h1>Bolinha ou Triângulo </h1>
+                A<input type="text" name="variavelA" id="variavelA"> <br>
+                B<input type="text" name="variavelB" id="variavelB"> <br>
+                C<input type="text" name="variavelC" id="variavelC">
+            </div>
+            <div>
+                <button id="resultRaiz" class="divBt"><span class="material-symbols-outlined">
+                    radio_button_unchecked
+                    </span> </button>
+                <button id="resultDelta" class="divBt"><span class="material-symbols-outlined">
+                    change_history
+                    </span></button>
+            </div>
+            <div id="resultBask">00</div>
+        </div>
+        <div class="helpBask">
+            <span class="material-symbols-outlined help_bask">live_help</span>
+            <span class="revelaBask"><p>A fórmula de Bhaskara é usada para encontrar as raízes de uma equação quadrática, dada por ax<sup>2</sup>+bx+c=0.</p></span>
+        </div>
+    </div>
+    <div class="contentConvers">
+        <div class="medidas">
+            <h1>Escolha sua conversão</h1>
+            <button class="see">km</button>
+            <button class="see">hm</button>
+            <button class="see">dam</button>
+            <button class="see">m</button>
+            <button class="see">dm</button>
+            <button class="see">cm</button>
+            <button class="see">mm</button><br>
+            Escolha sua Medida: <input type="text" name="" id="valorMedida"> <select name="" id="">
+            <option value="km">km</option>
+            <option value="hm">hm</option>
+            <option value="dam">dam</option>
+            <option value="m" selected>m</option>
+            <option value="dm">dm</option>
+            <option value="cm">cm</option>
+            <option value="mm">mm</option></select><br>
+            <button class="converte"><span class="material-symbols-outlined">conversion_path</span></button>            
+            <div class="resultadoConversao">Resultado</div>
+        </div>
+        <div class="helpMed">
+            <span class="material-symbols-outlined help_med">live_help</span>
+            <span class="revelaMed"><p>A conversão de medidas é basicamente o ato de mudar a expressão de uma quantidade de uma unidade para outra. Por exemplo, transformar 5 metros para centímetros. É uma maneira de expressar a mesma quantidade de forma diferente, utilizando unidades de medida alternativas.</p></span>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Yui. Todos os direitos reservados.</p>
+    </footer>
+    <script type="module" src="js/script1.js"></script>
+</body>
+</html>
